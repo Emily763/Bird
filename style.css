@@ -18,15 +18,62 @@ nav a{
 
 }
 
+/* hero homepage */
+.hero-home{
+    background-image: url(img/green.jpg);
+    height: 30vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* hero contact */
+
 p{
 
 }
 
 figure{
+    margin: auto 0;
+    position: relative;
+    overflow: hidden;
+}
 
+figcaption{
+    position: absolute;
+    bottom: 5px;
+    height: 35px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: aliceblue;
+    width: 100%;
 }
 
 img{
     max-width: 100%;
 }
 
+main{
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+section{
+    
+}
+
+@media only screen and (min-width: 600px){
+    section{
+        
+    }
+    main{
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        margin: auto;
+        width: 90%;
+        gap: 50px;
+    }
+    /* hero homepage */
+    /* hero contact */
+}/* End Large Screen Styles */
