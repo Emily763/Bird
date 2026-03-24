@@ -5,14 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Toco Toucan</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Allows for icons -->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Javascript library: jquery -->
+    <script src="nav.js"></script>
+    <!-- Navigation functions -->
 </head>
 <body>
     <header>
-        <h1 class="logo">The Toco Toucan</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
+        <!-- <h1 class="logo">The Toco Toucan</h1> -->
+        <nav class="mainNav" id="mainNav">
+            <input type="checkbox" name="" id="xBxHack">
+            <!-- Trigger for dropdown mobile nav menu icon -->
+             <div class="navcontainer">
+                <span class="nav-grid"></span>
+                    <span id="logo">
+                        <a href="index.html">The Toco Toucan</a>
+                    </span>
+                    <label for="xBxHack" class="navBars">
+                        <i class="fa fa-bars"></i>
+                        <!-- Haburger menu font awesome icon -->
+                    </label>
+                </span> <!-- END nav-grid -->
+                <ul id="menu" class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div> <!-- END navconatiner -->
         </nav>
     </header>
     <!-- tow·kow too·kan -->

@@ -10,14 +10,6 @@ header{
 
 }
 
-nav{
-    
-}
-
-nav a{
-
-}
-
 /* hero homepage */
 .hero-home{
     background-image: url(img/green.jpg);
@@ -62,6 +54,107 @@ main{
 section{
     
 }
+
+/* START NAV STYLES */
+.nav-grid{
+    display: grid;
+    min-height: 60px;
+    /* This could affect the amount of clickable space for users to toggle on the drop down menu. The larger the number then larger thumbs won't have a problem hiting this button */
+    grid-auto-flow: column;
+}
+
+/* Navigation bar styles */
+.mainNav {
+  background: #00411d;
+  /* Change bar color */
+  color:#ffffff;
+  /* Text color - For hamburger and company name*/
+  height: 55px;
+  /* How tall the nav bar is -
+  NOTE This number needs to be in sync with the top number for .mainnav .menu below */
+  position: relative;
+}
+
+/* Navigation links styles */
+nav a{
+  display: block;
+  padding:20px;
+  text-decoration: none;
+  color: #fff;
+  /* NOTE LINK color for company name*/
+  font-family:  sans-serif;
+}
+
+.mainNav a {
+  text-decoration: none;
+}
+
+.mainNav .menu {
+  background: #00411d;
+  /* Change the bar color above */
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #efefef;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /*POSITION*/
+  position: absolute;
+  top: 55px;
+  /* NOTE Main nav height and this number need to be the same for drop down menu */
+  right: 0;
+  left: 0;
+}
+
+.mainNav .menu a {
+  color: #fff;
+  /* NOTE Link color for drop down */
+  border-bottom: 1px solid #efefef;
+  font-weight: normal;
+  /* Change to bold if you want */
+  display: block;
+  padding: 15px;
+}
+
+.mainNav .menu a:hover {
+  background: #292938;
+  /* NOTE Background color when hovering over links */
+  color: #efefef;
+  /* Color of text when hovering over link */
+}
+
+.mainNav .navBars {
+  display: inline-block;
+  font-size: 1.2em;
+  /* NOTE This will affect the thickness of the hamburger lines */
+  line-height: 1.5em;
+  float: right;
+  text-align: right;
+  /* HAMBURGER POSITION to the right*/
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+#xBxHack {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -99999px;
+}
+
+#xBxHack:checked ~ nav .menu {
+  display: block;
+}
+
+.navcontainer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+}
+/* NOTE END MOBILE NAVIGATION STYLES */
 
 @media only screen and (min-width: 600px){
     section{
