@@ -1,5 +1,6 @@
 body{
-
+  margin: 0;
+  padding: 0;
 }
 
 header{
@@ -41,8 +42,26 @@ figcaption{
     width: 100%;
 }
 
+footer{
+  background-color: greenyellow;
+}
+
 img{
     max-width: 100%;
+}
+
+.img-on-left{
+
+}
+
+.img-on-left img{
+  float: left;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 main{
@@ -58,7 +77,7 @@ section{
 /* START NAV STYLES */
 .nav-grid{
     display: grid;
-    min-height: 60px;
+    /* min-height: 60px; */
     /* This could affect the amount of clickable space for users to toggle on the drop down menu. The larger the number then larger thumbs won't have a problem hiting this button */
     grid-auto-flow: column;
 }
