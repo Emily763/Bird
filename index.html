@@ -20,7 +20,7 @@
             <input type="checkbox" name="" id="xBxHack">
             <!-- Trigger for dropdown mobile nav menu icon -->
              <div class="navcontainer">
-                <span class="nav-grid"></span>
+                <span class="nav-grid">
                     <span id="logo">
                         <a href="index.html">The Toco Toucan</a>
                     </span>
@@ -110,9 +110,16 @@
         </div>
     </main>
     <footer>
-        <p>
-            Copyright &copy; 2026 Nation Goegraphic Society 
-        </p>
+        <div class="footer-wrap">
+            <p>
+            Copyright &copy; <span id="spanYear"></span> National Goegraphic Society 
+            </p>
+            <a href="#" class="fa fa-facebook-official"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
     </footer>
+    <script>
+        $('#spanYear').html(new Date().getFullYear());
+    </script>
 </body>
 </html>

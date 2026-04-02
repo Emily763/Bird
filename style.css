@@ -4,7 +4,7 @@ body{
 }
 
 header{
-    background-color: green;
+  background-color: green;
 }
 
 .logo{
@@ -13,11 +13,11 @@ header{
 
 /* hero homepage */
 .hero-home{
-    background-image: url(img/green.jpg);
-    height: 30vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
+  background-image: url(img/green.jpg);
+  height: 30vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 /* hero contact */
@@ -27,23 +27,19 @@ p{
 }
 
 figure{
-    margin: auto 0;
-    position: relative;
-    overflow: hidden;
+  margin: 21px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 figcaption{
-    position: absolute;
-    bottom: 5px;
-    height: 35px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.65);
-    color: aliceblue;
-    width: 100%;
-}
-
-footer{
-  background-color: greenyellow;
+  position: absolute;
+  bottom: 5px;
+  height: 35px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: aliceblue;
+  width: 100%;
 }
 
 img{
@@ -65,9 +61,9 @@ img{
 }
 
 main{
-    display: block;
-    margin: auto;
-    width: 90%;
+  display: block;
+  margin: auto;
+  width: 90%;
 }
 
 section{
@@ -76,10 +72,12 @@ section{
 
 /* START NAV STYLES */
 .nav-grid{
-    display: grid;
-    /* min-height: 60px; */
-    /* This could affect the amount of clickable space for users to toggle on the drop down menu. The larger the number then larger thumbs won't have a problem hiting this button */
-    grid-auto-flow: column;
+  display: grid;
+  /* min-height: 60px; */
+  /* This could affect the amount of clickable space for users to toggle on the drop down menu. The larger the number then larger thumbs won't have a problem hiting this button */
+  grid-auto-flow: column;
+  align-items: center;
+  padding: 5px;
 }
 
 /* Navigation bar styles */
@@ -88,7 +86,7 @@ section{
   /* Change bar color */
   color:#ffffff;
   /* Text color - For hamburger and company name*/
-  height: 55px;
+  /* height: 55px; */
   /* How tall the nav bar is -
   NOTE This number needs to be in sync with the top number for .mainnav .menu below */
   position: relative;
@@ -97,7 +95,7 @@ section{
 /* Navigation links styles */
 nav a{
   display: block;
-  padding:20px;
+  /* padding:20px; */
   text-decoration: none;
   color: #fff;
   /* NOTE LINK color for company name*/
@@ -137,7 +135,7 @@ nav a{
 }
 
 .mainNav .menu a:hover {
-  background: #292938;
+  /* background: #292938; */
   /* NOTE Background color when hovering over links */
   color: #efefef;
   /* Color of text when hovering over link */
@@ -169,23 +167,92 @@ nav a{
 }
 
 .navcontainer {
-  max-width: 960px;
+  max-width: 90%;
   margin: 0 auto;
   padding: 10px;
 }
 /* NOTE END MOBILE NAVIGATION STYLES */
 
+/* start footer styles-------------- */
+footer{
+  background-color: greenyellow;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  color: blue;
+}
+
+.footer-wrap{
+  width: 90%;
+  margin: auto;
+}
+
+footer .fa{
+  color: blue;
+  text-decoration: none;
+  font-size: 20px;
+  padding-right: 20px;
+}
+/* end footer styles---------------- */
+
 @media only screen and (min-width: 600px){
     section{
         
     }
+
     main{
-        grid-template-columns: 1fr 1fr;
-        display: grid;
-        margin: auto;
-        width: 90%;
-        gap: 50px;
+      grid-template-columns: 1fr 1fr;
+      display: grid;
+      margin: auto;
+      width: 90%;
+      gap: 50px;
     }
     /* hero homepage */
     /* hero contact */
 }/* End Large Screen Styles */
+
+@media only screen and (min-width: 1000px){
+  /* NOTE START Nav styles for medium and larger screens-----
+  Do not change nav styles below without help. */
+    .navcontainer{
+      display: grid;
+      min-height: 70px;
+      grid-auto-flow: column;
+      padding-top: 0;
+      padding-bottom: 0;
+      max-width:900px;
+  /*  You can change the max-width. This counter acts the styles above media query so the links could be all the way to the left */
+    }
+    .mainNav {
+      overflow: hidden;
+    }
+    .mainNav .navBars {
+      display: none;
+    }
+    #logo{
+        padding-top:10px;
+    }
+    #logo a{
+
+    }
+    .mainNav .menu {
+      display: block;
+      box-shadow: none;
+      border: none;
+      float: right;
+      /* float:left; */
+      /* NOTE LINKS POSITION to the left*/
+      /* text-align: center; */
+      /* NOTE LINKS POSITION center*/
+      text-align: right;
+      /* NOTE LINKS POSITION to the right*/
+      position: static;
+    }
+    .mainNav .menu li {
+      display: inline-block;
+    }
+    .mainNav .menu a {
+      border: none;
+      padding: 20px 10px;
+    }
+/* END nav styles ---------------------------- */
+} /* Desktop Styles ---------------------------*/
