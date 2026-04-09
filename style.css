@@ -18,13 +18,9 @@ header{
   width: 100%;
   background-position: center;
   background-size: cover;
+  margin-bottom: 40px;
 }
-
 /* hero contact */
-
-p{
-
-}
 
 figure{
   margin: 21px 0;
@@ -47,7 +43,10 @@ img{
 }
 
 .img-on-left{
-
+  height: 200px;
+  width: 90%;
+  margin: auto;
+  display: block;
 }
 
 .img-on-left img{
@@ -56,8 +55,21 @@ img{
   height: 150px;
   width: 150px;
   object-fit: cover;
-  margin-right: 10px;
+  margin-right: 30px;
   margin-bottom: 10px;
+
+}
+
+.clear-fix{
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.wide-90{
+  margin: auto;
+  width: 90%;
+  display: block;
 }
 
 main{
@@ -171,6 +183,21 @@ nav a{
   margin: 0 auto;
   padding: 10px;
 }
+
+p, table{
+  margin-top: 13px;
+}
+
+table, td{
+  border:1px solid gray;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+td{
+  width: 200px;
+}
+
 /* NOTE END MOBILE NAVIGATION STYLES */
 
 /* start footer styles-------------- */
